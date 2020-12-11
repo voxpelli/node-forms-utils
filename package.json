@@ -1,13 +1,13 @@
 {
-  "name": "@hdsydsvenskan/forms-utils",
+  "name": "@voxpelli/forms-utils",
   "version": "2.1.1",
   "license": "MIT",
   "description": "A set of useful utilities for the forms module",
-  "author": "Pelle Wessman <pelle.wessman@hdsydsvenskan.se>",
-  "homepage": "https://github.com/sydsvenskan/node-forms-utils",
+  "author": "Pelle Wessman <pelle@kodfabrik.se>",
+  "homepage": "https://github.com/voxpelli/node-forms-utils",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sydsvenskan/node-forms-utils"
+    "url": "git://github.com/voxpelli/node-forms-utils"
   },
   "engines": {
     "node": ">=12.0.0"

@@ -1,4 +1,6 @@
-# @hdsydsvenskan/forms-utils
+# @voxpelli/forms-utils
+
+Fork of [`@hdsydsvenskan/forms-utils`](https://github.com/Sydsvenskan/node-forms-utils)
 
 A collection of fields, widgets and other useful utils for the [forms](https://www.npmjs.com/package/forms) module.
 
@@ -7,7 +9,7 @@ A collection of fields, widgets and other useful utils for the [forms](https://w
 ## Usage
 
 ```javascript
-const { customFields: fields } = require('@hdsydsvenskan/forms-utils');
+const { customFields: fields } = require('@voxpelli/forms-utils');
 const { fields, widgets } = require('forms');
 
 const formDefinition = {
@@ -56,7 +58,7 @@ const formDefinition = {
 #### Example
 
 ```javascript
-import { multiField } from '@hdsydsvenskan/forms-utils/browser/multi-field';
+import { multiField } from '@voxpelli/forms-utils/browser/multi-field';
 
 const multiFieldSetup = multiFieldSetup({ dragula });
 
