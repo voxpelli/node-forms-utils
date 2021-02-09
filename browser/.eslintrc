@@ -1,4 +1,24 @@
 {
-  "extends": "@hdsydsvenskan/eslint-config-hds-browser",
-  "root": true
+  "plugins": [
+    "compat"
+  ],
+  "extends": [
+    "@voxpelli"
+  ],
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "root": true,
+  "rules": {
+    "compat/compat": 2,
+    "node/no-unsupported-features/es-syntax": 0,
+    "unicorn/no-fn-reference-in-iterator": 0,
+    "unicorn/prefer-includes": 1,
+    "unicorn/prefer-node-append": 1,
+    "unicorn/prefer-node-remove": 1,
+    "unicorn/prefer-number-properties": 0,
+    "unicorn/prefer-query-selector": 0,
+    "unicorn/prefer-reflect-apply": 0
+  }
 }

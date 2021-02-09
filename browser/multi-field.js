@@ -24,6 +24,24 @@ import {
 /** @typedef {(fieldElem: HTMLElement) => void} MultiFieldInitField */
 
 /**
+ * @param {Node} elem
+ * @param {string} className
+ * @param {Node} stop
+ * @returns {HTMLElement|undefined}
+ */
+const closestByClassWithStop = (elem, className, stop) => {
+  while (elem.parentNode) {
+    elem = elem.parentNode;
+    if (elem === stop) {
+      return;
+    }
+    if (elem instanceof HTMLElement && elem.classList && hasClass(elem, className)) {
+      return elem;
+    }
+  }
+};
+
+/**
  * @param {MultiFieldOptions} options
  * @returns {{ init: MultiFieldInit, initField: MultiFieldInitField }}
  */
@@ -38,24 +56,6 @@ export const multiField = function (options) {
   const rowContainerClass = 'field__multi-row-container';
   const rowClass = 'field__multi-row';
   const buttonClass = 'field__multi-remove';
-
-  /**
-   * @param {Node} elem
-   * @param {string} className
-   * @param {Node} stop
-   * @returns {HTMLElement|undefined}
-   */
-  const closestByClassWithStop = (elem, className, stop) => {
-    while (elem.parentNode) {
-      elem = elem.parentNode;
-      if (elem === stop) {
-        return;
-      }
-      if (elem instanceof HTMLElement && elem.classList && hasClass(elem, className)) {
-        return elem;
-      }
-    }
-  };
 
   /** @type {MultiFieldInitField} */
   const initField = fieldElem => {

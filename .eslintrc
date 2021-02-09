@@ -1,4 +1,10 @@
 {
-  "extends": "@hdsydsvenskan/eslint-config-hds",
-  "root": true
+  "extends": "@voxpelli",
+  "root": true,
+  "rules": {
+    "promise/no-callback-in-promise": 0,
+    "promise/prefer-await-to-then": 0,
+    "unicorn/no-null": 0,
+    "unicorn/no-reduce": 0
+  }
 }
